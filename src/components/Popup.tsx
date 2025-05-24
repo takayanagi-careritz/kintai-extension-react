@@ -1,3 +1,5 @@
+import Button from "@mui/material/Button";
+
 export const Popup = () => {
   const onClick = () => alert("hello world");
 
@@ -9,17 +11,12 @@ export const Popup = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#30f0f0",
+        backgroundColor: "#f030f0",
       }}
     >
-      <button
-        style={{
-          height: "30px",
-        }}
-        onClick={onClick}
-      >
+      <Button variant="contained" color="primary" onClick={onClick}>
         こんにちはボタン
-      </button>
+      </Button>
     </div>
   );
 };
