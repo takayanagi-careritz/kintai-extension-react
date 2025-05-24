@@ -1,4 +1,36 @@
-# 仮置き
+# HRMOS勤怠入力 補助アプリ
+
+## 概要
+
+HRMOS勤怠入力を便利にするアプリの作成  
+Vite + React + TS でChrome拡張機能を作成する
+
+## はじめに
+
+1. パッケージインストール
+   ```sh
+   npm i
+   ```
+
+## 動かすには
+
+1. Chrome を開いて [chrome://extensions/](chrome://extensions/) に行く
+2. 右上の「デベロッパーモード」をオン
+3. 「パッケージ化されていない拡張機能を読み込む」をクリック
+4. dist フォルダを選択
+5. 「HRMOS勤怠入力 補助アプリ」の拡張機能アイコンを押す
+6. 拡張機能UIが開かれる
+
+## 開発するには
+
+ホットリロードで開発したい！ので以下手順を実施
+
+1. chrome拡張機能「[Extensions Reloader](https://chromewebstore.google.com/detail/extensions-reloader/fimgfedafeadlieiabdeeaodndnlbhid?hl=ja)」を追加
+2. ビルド自動化
+   ```sh
+   npm run build-watch
+   ```
+3. これで変更を検知して、ビルド＋配置をおこなってくれる
 
 ## コミットルール
 
