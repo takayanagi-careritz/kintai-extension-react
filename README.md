@@ -11,6 +11,10 @@ Vite + React + TS でChrome拡張機能を作成する
    ```sh
    npm i
    ```
+2. ビルド
+   ```sh
+   npm run build
+   ```
 
 ## 動かすには
 
@@ -51,4 +55,3 @@ Atomic Designをベースに、/components 下から３つに分類
 | `chore:`    | 本質的な変更ではない雑多な修正 | `chore: コメントを追加`            |
 | `refactor:` | 仕様変更なしのコード整理       | `refactor: if文の構造を整理`       |
 | `remove:`   | 機能やファイルの削除           | `remove: 不要なテストコードを削除` |
-| `docs:`     | ドキュメントの追加・変更       | `docs: READMEに使い方を追記`       |
