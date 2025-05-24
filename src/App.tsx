@@ -1,9 +1,9 @@
-import { Popup } from "./components/Popup";
+import { Flame } from "@/components/features/Flame";
 
 const App = () => {
   return (
     <>
-      <Popup />
+      <Flame />
     </>
   );
 };
