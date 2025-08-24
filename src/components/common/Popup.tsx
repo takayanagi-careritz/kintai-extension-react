@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/Button";
+import { TimeSelect } from "@/components/ui/TimeSelect";
+import { Stack, Typography } from "@mui/material";
 
 export const Popup = () => {
   /**
@@ -36,7 +38,18 @@ export const Popup = () => {
 
   return (
     <div>
-      <Button onClick={onClickToDetail}>今日の詳細に遷移するボタン</Button>
+      <Stack spacing={2}>
+        <Button onClick={onClickToDetail}>今日の詳細に遷移するボタン</Button>
+
+        <Stack direction="row" spacing={1}>
+          {/* TODO: デフォルトの値はcookieから取得 */}
+          <TimeSelect value="10:00" onChange={() => {}} />
+          <Typography sx={{ display: "flex", alignItems: "center" }}>
+            ～
+          </Typography>
+          <TimeSelect value="19:00" onChange={() => {}} />
+        </Stack>
+      </Stack>
     </div>
   );
 };
