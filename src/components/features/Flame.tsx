@@ -4,8 +4,6 @@ export const Flame = () => {
   return (
     <div
       style={{
-        width: "400px",
-        height: "400px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

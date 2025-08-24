@@ -1,9 +1,9 @@
 import React from "react";
-import { Select, MenuItem, type SelectChangeEvent } from "@mui/material";
+import { Select, MenuItem } from "@mui/material";
 
 type TimeSelectProps = {
-  value?: string;
-  onChange?: (event: SelectChangeEvent<string>) => void;
+  value: string;
+  onChange: (value: string) => void;
 };
 
 // 00:00から23:45まで15分刻みの時刻配列を生成
@@ -20,7 +20,7 @@ export const TimeSelect: React.FC<TimeSelectProps> = ({ value, onChange }) => {
   return (
     <Select
       value={value}
-      onChange={onChange}
+      onChange={(e) => onChange(e.target.value)}
       sx={{ minWidth: 100, height: 40 }}
     >
       {times.map((time) => (
