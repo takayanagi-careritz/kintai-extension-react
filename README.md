@@ -20,6 +20,8 @@ Vite + React + TS でChrome拡張機能を作成する
 
 ## 動かすには
 
+（そのうち.zipをDLして、展開するだけにするよう変更予定）
+
 1. Chrome を開いて [chrome://extensions/](chrome://extensions/) に行く
 2. 右上の「デベロッパーモード」をオン
 3. 「パッケージ化されていない拡張機能を読み込む」をクリック
