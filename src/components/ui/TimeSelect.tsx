@@ -21,7 +21,7 @@ export const TimeSelect: React.FC<TimeSelectProps> = ({ value, onChange }) => {
     <Select
       value={value}
       onChange={(e) => onChange(e.target.value)}
-      sx={{ minWidth: 100, height: 40 }}
+      sx={{ width: 120, height: 40 }}
     >
       {times.map((time) => (
         <MenuItem key={time} value={time}>
