@@ -17,6 +17,27 @@ export const clickTodayIcon = () => {
 };
 
 /**
+ * 指定日付のアイコンをクリックする処理
+ * @param string "YYYY-MM-DD"
+ */
+export const clickDateIcon = (dateStr: string) => {
+  // "YYYY-MM-DD"形式でないならエラー
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
+    throw new Error("Invalid date format. expected 'YYYY-MM-DD'");
+  }
+  const dayStr = dateStr.split("-")[2];
+  const trElements = [...document.getElementsByTagName("tr")];
+  const targetTr = trElements.find((tr) => {
+    const dateElement = tr.querySelector(".date");
+    if (dateElement instanceof HTMLElement) {
+      const formattedDate = dateElement.innerText.replace(/ /g, "");
+      return formattedDate === dayStr;
+    }
+  });
+  targetTr?.querySelector("a")?.click();
+};
+
+/**
  * 開始時刻、終了時刻を入力する処理
  * @param startTime 開始時刻
  * @param endTime 終了時刻
