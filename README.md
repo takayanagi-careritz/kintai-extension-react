@@ -7,7 +7,7 @@ Vite + React + TS でChrome拡張機能を作成する
 
 ## 動かすには
 
-1. 以下zipをダウンロードし、展開
+1. 以下zipをダウンロードし、展開  
    [kintai-extension.zip](https://github.com/user-attachments/files/22028052/kintai-extension.zip)
 
 2. Chrome を開いて [chrome://extensions/](chrome://extensions/) に行く
