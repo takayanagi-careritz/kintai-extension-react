@@ -5,27 +5,15 @@
 HRMOS勤怠入力を便利にするアプリの作成  
 Vite + React + TS でChrome拡張機能を作成する
 
-## はじめに
-
-1. リポジトリクローン
-2. プロジェクトフォルダにチェンジディレクトリ
-3. パッケージインストール
-   ```sh
-   npm i
-   ```
-4. ビルド
-   ```sh
-   npm run build
-   ```
-
 ## 動かすには
 
-（そのうち.zipをDLして、展開するだけにするよう変更予定）
+1. 以下zipをダウンロードし、展開
+   [kintai-extension.zip](https://github.com/user-attachments/files/22028052/kintai-extension.zip)
 
-1. Chrome を開いて [chrome://extensions/](chrome://extensions/) に行く
-2. 右上の「デベロッパーモード」をオン
-3. 「パッケージ化されていない拡張機能を読み込む」をクリック
-4. ビルドで生成された dist フォルダを選択
+2. Chrome を開いて [chrome://extensions/](chrome://extensions/) に行く
+3. 右上の「デベロッパーモード」をオン
+4. 「パッケージ化されていない拡張機能を読み込む」をクリック
+4. zip展開した「kintai-extension」 フォルダを選択
 5. HRMOS勤怠ページを開く
 6. 「HRMOS勤怠入力 補助アプリ」の拡張機能アイコンを押す
 7. 拡張機能UIが開かれる
@@ -35,11 +23,18 @@ Vite + React + TS でChrome拡張機能を作成する
 ホットリロードで開発したい！ので以下手順を実施
 
 1. chrome拡張機能「[Extensions Reloader](https://chromewebstore.google.com/detail/extensions-reloader/fimgfedafeadlieiabdeeaodndnlbhid?hl=ja)」を追加
-2. ビルド自動化
+
+2. リポジトリクローン
+3. プロジェクトフォルダにチェンジディレクトリ
+4. パッケージインストール
+   ```sh
+   npm i
+   ```
+5. ビルド自動化
    ```sh
    npm run build-watch
    ```
-3. これで変更を検知して、ビルド＋配置をおこなってくれる
+6. これで変更を検知して、ビルド＋配置をおこなってくれる
 
 ## UIディレクトリ構造 思想
 
